@@ -1,0 +1,276 @@
+body {
+  margin:0;
+}
+
+.top-logo {
+  height:45px;
+  width:45px;
+}
+
+.left-column {
+  width:30%;
+  float:left;
+}
+
+.right-column {
+  width:70%;
+  float:right;
+}
+
+.profile-pic {
+  margin-top:30px;
+  margin-left:60px;
+  margin-bottom:15px;
+  width:50%;
+  height:20%;
+}
+
+.firstname {
+  margin-left:100px;
+}
+
+.lastname {
+  margin-left:100px;
+  margin-bottom:15px;
+}
+
+.location, .college {
+  margin-left:90px;
+  font-size:20px;
+  margin-bottom:25px;
+}
+
+.inner-left {
+  width:50%;
+  float:left;
+  margin-bottom:30px;
+}
+
+.welcome {
+  margin-left:-40px;
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+}
+
+.ongoing, .completed {
+  list-style:none;
+}
+
+.inner-right {
+  width:50%;
+  float:right;
+  margin-bottom:30px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  vertical-align:middle;
+  margin-left:90px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.ongoing li {
+  background: #cce5ff;
+  margin: 5px;
+  width:50%;
+  font-size:20px;
+  text-decoration: none;
+}
+
+.ongoing li:hover {
+  background-color: orange;
+  color: white;
+
+}
+
+.completed a {
+  text-decoration:none;
+}
+
+.completed li {
+  background: #cce5ff;
+  margin: 5px;
+  width:50%;
+  font-size:20px;
+}
+
+.completed li:hover {
+  background-color: green;
+  color: white;
+}
+
+
+.note-title, .note-content{
+  font-size:100%;
+  font-weight:normal;
+}
+.notes, .single-note{
+  list-style:none;
+}
+.notes{
+  overflow:hidden;
+  padding:3em;
+}
+.notes .single-note a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+}
+.notes .single-note{
+  margin:1em;
+  float:left;
+}
+
+.notes .single-note .note-title{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.notes .single-note .note-content{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+
+.notes .single-note .note-link{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.notes .single-note:nth-child(even) .note-link{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+
+.notes .single-note:nth-child(3n) .note-link{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+
+.notes .single-note:nth-child(5n) .note-link{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+.notes .single-note .note-link:hover,.notes .single-note .note-link:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  margin-top:40px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
