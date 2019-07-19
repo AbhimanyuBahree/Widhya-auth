@@ -49,8 +49,8 @@ app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///db.sqlite3'
 
 db.init_app(app)
 app.config['MAIL_SERVER']='smtp.gmail.com'
-app.config['MAIL_USERNAME']='nidhi.bahree@gmail.com'
-app.config['MAIL_PASSWORD']='babubabu2611'
+app.config['MAIL_USERNAME']='widhya.testing@gmail.com'
+app.config['MAIL_PASSWORD']='zapakzapak'
 app.config['MAIL_PORT']=465
 app.config['MAIL_USE_SSL']=True
 app.config['MAIL_SUPPRESS_SEND']=False
