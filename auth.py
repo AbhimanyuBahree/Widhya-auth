@@ -44,7 +44,7 @@ def reset_post():
         confirm_url = url_for('auth.newpassword', token=token, _external=True)
         html = render_template('resetmail.html', confirm_url=confirm_url)
         subject="Password Reset"
-        msg=Message(subject=subject,sender="nidhi.bahree@gmail.com",recipients=[email,'abhimanyu.bahree@gmail.com'],html=html)
+        msg=Message(subject=subject,sender="nidhi.bahree@gmail.com",recipients=[email],html=html)
         mail.send(msg)
         flash("Reset password email successfully sent. Go check your email",'success')
     return render_template('resetpassword.html')
@@ -121,10 +121,10 @@ def signup_post():
         confirm_url = url_for('auth.confirm_email', token=token, _external=True)
         html = render_template('activate.html', confirm_url=confirm_url)
         subject="Please confirm your email"
-        msg=Message(subject=subject,sender="nidhi.bahree@gmail.com",recipients=[email,'abhimanyu.bahree@gmail.com'],html=html)
+        msg=Message(subject=subject,sender="nidhi.bahree@gmail.com",recipients=[email],html=html)
         mail.send(msg)
         flash('You are successfully registered!','success')
-        msg=Message(subject="Welcome to Widhya Tech",sender="nidhi.bahree@gmail.com",recipients=[email,'abhimanyu.bahree@gmail.com'])
+        msg=Message(subject="Welcome to Widhya Tech",sender="nidhi.bahree@gmail.com",recipients=[email])
         msg.body="Hi "+name+" you are successfully registered"+" as a "+urole+". Your password is "+password
         mail.send(msg)
     return render_template('signup.html')
