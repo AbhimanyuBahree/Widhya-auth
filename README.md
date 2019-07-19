@@ -1,1 +1,1 @@
-# Widhya-auth
+# WidhyaOrg.github.io
