@@ -16,7 +16,7 @@ Flask-WTF==0.14.2
 gunicorn==19.9.0
 itsdangerous==1.1.0
 jedi==0.12.1
-Jinja2==2.10
+Jinja2==2.11.3
 jsonschema==2.6.0
 MongoAlchemy==0.19
 mongoengine==0.17.0
